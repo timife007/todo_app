@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  todos_api:
+    path: ../todos_api
 
 dev_dependencies:
   flutter_test:
