@@ -3,7 +3,6 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 import 'package:uuid/uuid.dart';
 
-
 part 'todo.g.dart';
 
 @immutable
@@ -35,8 +34,6 @@ class Todo extends Equatable {
         id: id ?? this.id,
         description: description ?? this.description,
         isCompleted: isCompleted ?? this.isCompleted);
-
-  
   }
 
   /// Deserializes the given [JsonMap] into a [Todo].
@@ -54,4 +51,3 @@ class Todo extends Equatable {
 /// The type definition for a JSON-serializable [Map].
 /// Returns a typedef for code checking and linting.
 typedef JsonMap = Map<String, dynamic>;
-
